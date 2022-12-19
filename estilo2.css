@@ -1,0 +1,58 @@
+*{
+	box-sizing: border-box /* Comentário*/
+}
+body{
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+.topo{
+	background-color: lightblue;
+	width: 100%;
+	padding: 30px;
+	text-align: center;
+}
+
+nav{
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	background: #ccc;
+	padding: 20px;
+}
+
+nav ul{
+	list-style-type: none;
+	padding: 0;
+	font-size: 1.5em;
+}
+
+nav a{
+	text-decoration: none; /* remove a linha do link */
+}
+
+article{
+	-webkit-flex 3;
+	-ms-flex: 3;
+	flex: 3;
+	padding: 20px;
+	background: #f1f1f1;
+	height: 300px
+}
+
+section{
+	display: -webkit-flex;
+	display: flex;
+}
+
+footer{
+	background: lightblue;
+	padding: 10px;
+	text-align: center;
+}
+
+@media scren only (max-width: 600px){
+	section{
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+}
